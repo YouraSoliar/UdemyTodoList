@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UdemyTodoList</string>
+    <string name="edit_text_note">Input your Note</string>
+    <string name="radio_button_easy">Low</string>
+    <string name="radio_button_medium">Medium</string>
+    <string name="radio_button_hard">High</string>
+    <string name="button_create_note">Create Note</string>
+</resources>

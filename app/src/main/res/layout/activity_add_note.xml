@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/edit_text_note"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTask">
+
+        <RadioButton
+            android:id="@+id/radioButtonLater"
+            android:layout_width="match_parent"
+            android:background="@color/green"
+            android:paddingRight="8dp"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_easy" />
+
+        <RadioButton
+            android:id="@+id/radioButtonImportant"
+            android:layout_width="match_parent"
+            android:paddingRight="8dp"
+            android:background="@color/yellow"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_medium" />
+
+        <RadioButton
+            android:id="@+id/radioButtonImmediately"
+            android:layout_width="match_parent"
+            android:background="@color/red"
+            android:paddingRight="8dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_hard" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCreateNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_create_note"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
